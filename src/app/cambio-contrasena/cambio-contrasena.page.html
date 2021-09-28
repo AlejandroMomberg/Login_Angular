@@ -1,9 +1,35 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>cambioContrasena</ion-title>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-button>
+        <img src="./assets/img/DuocBlanco.png" width="200px">
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="ion-padding ion-text-center">
+  <div class="espaciado"></div>
+  
+  <div class="form">
+    <ion-item lines='none'>
+      <ion-input placeholder="Usuario"></ion-input>
+    </ion-item>
 
+    <ion-item lines='none'>
+      <ion-input placeholder="Correo Institucional"></ion-input>
+    </ion-item>
+
+    <ion-item lines='none'>
+      <ion-input placeholder="Nueva Contraseña" type='password'></ion-input>
+    </ion-item>
+    
+    <ion-item lines='none'>
+      <ion-input placeholder="Confirmar Contraseña" type='password'></ion-input>
+    </ion-item>
+
+    <ion-button color="dark">Confirmar</ion-button>
+    <ion-button color="medium">Volver</ion-button>
+  </div>
+  <img class="acreditado" src="./assets/img/Acreditado.png">
 </ion-content>

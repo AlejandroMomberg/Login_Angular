@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar color="dark">
     <ion-buttons slot="start">
-      <ion-button>
+      <ion-button href="/home">
         <img src="./assets/img/DuocBlanco.png" width="200px">
       </ion-button>
     </ion-buttons>
@@ -30,7 +30,7 @@
         <ion-card-subtitle>Asientos Disponibles:</ion-card-subtitle>
         <ion-card-title>4</ion-card-title>
         <br>
-        <ion-button color="dark" expand='block'>Ver más</ion-button>
+        <ion-button color="dark" expand='block' (click)="mensajeCargando()">Ver más</ion-button>
       </ion-card-content>
     </ion-card>
     

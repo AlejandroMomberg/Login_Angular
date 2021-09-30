@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar color="dark">
     <ion-buttons slot="start">
-      <ion-button>
+      <ion-button >
         <img src="./assets/img/DuocBlanco.png" width="200px">
       </ion-button>
     </ion-buttons>
@@ -10,7 +10,7 @@
 
 <ion-content class="ion-padding ion-text-center">
   <div class="espaciado"></div>
-  
+  <h1>Iniciar Sesion</h1>
   <div class="form">
     <ion-item lines='none'>
       <ion-input placeholder="Usuario"></ion-input>
@@ -20,12 +20,12 @@
       <ion-input placeholder="Contraseña" type='password'></ion-input>
     </ion-item>
     
-    <ion-button color='dark' expand='block'>Ingresar</ion-button>
+    <ion-button color='dark' expand='block' (click)="mensajeCargando()" >Ingresar</ion-button>
+    
+  
     <br>
-
     <br>
-    <br>
-    <a href="#">Olvidé mi contraseña</a>
+    <a href="/cambio-contrasena">Olvidé mi contraseña</a>
     
     <img class="acreditado" src="./assets/img/Acreditado.png">
   </div>

@@ -7,8 +7,13 @@
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
+
 <body>
-  <ion-content>
+  <ion-content class="ion-text-center">
+    <div class="margentop"></div>
+    <ion-text color="dark">
+      <h1>Bienvenido Alumno!</h1>
+    </ion-text>
     <ion-card class="card">
       <img src="./assets/img/wrxsti.jpg" />
       <ion-card-header>
@@ -30,7 +35,7 @@
         <ion-card-subtitle>Asientos Disponibles:</ion-card-subtitle>
         <ion-card-title>4</ion-card-title>
         <br>
-        <ion-button color="dark" expand='block' (click)="mensajeCargando()">Ver más</ion-button>
+        <ion-button color="dark" expand='block' (click)="presentActionSheet()">Ver más</ion-button>
       </ion-card-content>
     </ion-card>
     
@@ -55,7 +60,7 @@
         <ion-card-subtitle>Asientos Disponibles:</ion-card-subtitle>
         <ion-card-title>3</ion-card-title>
         <br>
-        <ion-button color="dark" expand='block'>Ver más</ion-button>
+        <ion-button color="dark" expand='block' (click)="mensajeCargando()">Ver más</ion-button>
       </ion-card-content>
     </ion-card>
 
@@ -65,10 +70,10 @@
         <ion-list>
           <ion-item>
             <ion-avatar slot="start">
-              <img src="./assets/img/PerfilMauri.jpg">
+              <img src="./assets/img/Dillan.png">
             </ion-avatar>
             <ion-label>
-              <h2>Mauricio Canales</h2>
+              <h2>Juan Pérez</h2>
               <p>Ing. en informática</p>
             </ion-label>
           </ion-item>
@@ -80,7 +85,7 @@
         <ion-card-subtitle>Asientos Disponibles:</ion-card-subtitle>
         <ion-card-title>1</ion-card-title>
         <br>
-        <ion-button color="dark" expand='block'>Ver más</ion-button>
+        <ion-button color="dark" expand='block' (click)="mensajeCargando()">Ver más</ion-button>
       </ion-card-content>
     </ion-card>
 
